@@ -1,5 +1,5 @@
 {% from "openssh/map.jinja" import openssh with context %}
-{% set custom_install        = salt['pillar.get']('sshd_config:custom', none) %}
+{% set custom_install        = salt['pillar.get']('sshd_config:Custom', none) %}
 
 {% if custom_install is not none %}
 openssh:
