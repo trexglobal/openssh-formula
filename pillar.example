@@ -29,6 +29,9 @@ sshd_config:
   Subsystem: "sftp /usr/lib/openssh/sftp-server"
   UsePAM: yes
 
+sshd_formula_config:
+  Custom: True
+
 openssh:
   auth:
     joe:
